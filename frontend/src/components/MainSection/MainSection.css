@@ -1,0 +1,10 @@
+.carousel-box {
+    background: linear-gradient(96.82deg, #F0F0F0 10%, rgba(255, 255, 255, 0) 104.16%);
+    filter: drop-shadow(5px 4px 20px rgba(0, 0, 0, 0.3));
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.2); /* Add border color and width */
+  }
+  
