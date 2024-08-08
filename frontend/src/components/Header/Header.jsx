@@ -1,91 +1,98 @@
-import React from 'react'
-import './Header.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { BiMenu, BiX } from 'react-icons/bi';
+import logo from '../../assets/logo.svg';
+import './Header.css'; // Import custom CSS
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeTab, setActiveTab] = useState('Home');
+
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
+  const navTabs = [
+    { path: '/home', label: 'Home' },
+    { path: '/about', label: 'About' },
+    { path: '/class', label: 'Classes' },
+    { path: '/tt', label: 'YTTC' },
+    { path: '/schedule', label: 'Schedule' },
+    { path: '/contactus', label: 'Contact' },
+  ];
+
   return (
     <>
-   <footer className="footer">
-      <div className="container">
-        <div className="row">
-          {/* Contact Details */}
-          <div className="col-lg-4 col-sm-6 contactDetails">
-            <h3>Contact Details</h3>
-            <div className="detail">
-              <div className="icon">
-                <i className="fa-solid fa-location-dot"></i>
-              </div>
-              <div className="text">Rishikesh</div>
-            </div>
-            <div className="detail">
-              <div className="icon">
-                <i className="fa-solid fa-envelope"></i>
-              </div>
-              <div className="text">info@indiayogashala.com</div>
-            </div>
-            <div className="detail">
-              <div className="icon">
-                <i className="fa-solid fa-phone"></i>
-              </div>
-              <div className="text">+91 91493 07205</div>
-            </div>
-            <div className="socialMedia">
-              <div className="icon">
-                <i className="fa-brands fa-facebook-f"></i>
-              </div>
-              <div className="icon">
-                <i className="fa-brands fa-instagram"></i>
-              </div>
-              <div className="icon">
-                <i className="fa-brands fa-twitter"></i>
-              </div>
-              <div className="icon">
-                <i className="fa-brands fa-linkedin-in"></i>
-              </div>
-            </div>
-          </div>
+      <section className="header_top"></section>
+      <header className="mt-[-50px]">
+        <nav className="container mx-auto flex items-center justify-between py-4">
+          <Link to="/" className="navbar-brand">
+            <img src={logo} alt="Logo" />
+          </Link>
+          <button
+            className="md:hidden text-3xl text-orange-500"
+            onClick={toggleMenu}
+          >
+            <BiMenu />
+          </button>
 
-          {/* Training Packages */}
-          <div className="col-lg-4 trainingPackages">
-            <img src="./assets/logo.svg" alt="Logo" />
-            <ul>
-              <li><a href="https://indiayogashala.com/demo/course/200-hour-yoga-teacher-training-in-goa-india">200 Hour Yoga Teacher Training Goa</a></li>
-              <li><a href="https://indiayogashala.com/demo/course/200-hour-yoga-teacher-training-in-rishikesh-india">200 Hour Yoga Teacher Training Rishikesh</a></li>
-              <li><a href="https://indiayogashala.com/demo/">200 Hour Yoga Teacher Training Mysore</a></li>
-              <li><a href="https://indiayogashala.com/demo/">Yoga Retreats in Goa</a></li>
-              <li><a href="https://indiayogashala.com/demo/">Yoga Retreats in Rishikesh</a></li>
-              <li><a href="https://indiayogashala.com/demo/">Yoga Retreats in Mysore</a></li>
-              <li><a href="https://indiayogashala.com/demo/">India Yogashala</a></li>
+          {/* Centered Tabs */}
+          <div
+            className={`${
+              isMenuOpen ? 'block' : 'hidden'
+            } fixed top-0 left-0 right-0 bg-gradient-to-r from-[#5b1600] to-[#f15a29] z-50 flex flex-col items-center justify-center transition-transform duration-500 ease-in-out transform ${
+              isMenuOpen ? 'translate-y-0' : 'translate-y-[-100%]'
+            }`}
+          >
+            <button
+              className="absolute top-4 right-4 text-white text-3xl"
+              onClick={toggleMenu}
+            >
+              <BiX />
+            </button>
+            <ul className="flex flex-col items-center space-y-4 mt-16 w-full px-4">
+              {navTabs.map((tab, index) => (
+                <li
+                  key={index}
+                  className={`w-full rounded-md py-2 cursor-pointer ${activeTab === tab.label ? 'bg-white text-[#5b1600]' : 'text-[#ffe4dc] hover:bg-[#f15a29] hover:text-white'}`}
+                  onClick={() => setActiveTab(tab.label)}
+                >
+                  <Link to={tab.path} className="block text-center">
+                    {tab.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
-          {/* Quick Links */}
-          <div className="col-lg-4 col-sm-6 quickLinks">
-            <h3>Quick Links</h3>
-            <ul>
-              <li><a href="https://indiayogashala.com/demo/mentors">Our Trainers</a></li>
-              <li><a href="https://indiayogashala.com/demo/blogs">Blogs</a></li>
-              <li><a href="https://indiayogashala.com/demo/gallery">Yoga Gallery</a></li>
-              <li><a href="https://indiayogashala.com/demo/faq">FAQ</a></li>
-              <li><a href="https://indiayogashala.com/demo/testimonial">Testimonial</a></li>
-              <li><a href="https://indiayogashala.com/demo/about">About Us</a></li>
-              <li><a href="https://indiayogashala.com/demo/contact">Contact Us</a></li>
-              <li><a href="https://indiayogashala.com/demo/terms-and-conditions">T & C</a></li>
-              <li><a href="https://indiayogashala.com/demo/privacy-policy">Privacy Policy</a></li>
+          {/* Desktop view tabs */}
+          <div
+            className={`hidden md:flex items-center justify-center w-full ${
+              isMenuOpen ? 'hidden' : 'block'
+            }`}
+          >
+            <ul className="bg-gradient-to-r from-[#5b1600] to-[#f15a29] flex justify-center items-center rounded-[30px_8px] p-4 text-[16px] space-x-6">
+              {navTabs.map((tab, index) => (
+                <li
+                  key={index}
+                  className={`rounded-[20px] px-4 py-2 cursor-pointer ${activeTab === tab.label ? 'bg-white text-[#5b1600]' : 'text-[#ffe4dc] hover:bg-[#f15a29] hover:text-white'}`}
+                  onClick={() => setActiveTab(tab.label)}
+                >
+                  <Link to={tab.path} className="block">
+                    {tab.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
-        </div>
-      </div>
-      <div className="container-fluid">
-        <div className="row copyright">
-          <div className="col">
-            <p className="mb-0">Copyright © 2022 | India Yogashala</p>
+
+          <div className="hidden md:flex md:items-center">
+            <Link to="/login">
+              <button className="btn mr-8">Login</button>
+            </Link>
           </div>
-        </div>
-      </div>
-    </footer>
+        </nav>
+      </header>
     </>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
