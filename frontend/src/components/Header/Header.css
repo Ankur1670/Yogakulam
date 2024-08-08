@@ -1,0 +1,113 @@
+footer.footer {
+    background-color: #F15A29;
+  }
+  footer.footer .container {
+    padding-bottom: 40px;
+  }
+  footer.footer .container .contactDetails {
+    background-color: #F15A29;
+    border-radius: 0 15px 0 0;
+    padding: 40px 0;
+    color: #ffffff;
+  }
+  footer.footer .container .contactDetails h3 {
+    color: #ffffff;
+  }
+  footer.footer .container .contactDetails .detail {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  footer.footer .container .contactDetails .socialMedia {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  footer.footer .container .contactDetails .socialMedia .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #ffffff;
+  }
+  footer.footer .container .contactDetails .socialMedia .icon i {
+    color: #F15A29;
+  }
+  footer.footer .container .contactDetails .socialMedia .icon:hover i {
+    color: #5B1600;
+  }
+  footer.footer .container .trainingPackages {
+    border-radius: 0 0 15px 15px;
+    background-color: #ffffff;
+    position: relative;
+  }
+  footer.footer .container .trainingPackages img {
+    display: block;
+    margin: auto;
+  }
+  footer.footer .container .trainingPackages ul {
+    list-style: none;
+    text-align: center;
+    margin-top: 15px;
+    padding: 0;
+  }
+  footer.footer .container .trainingPackages ul li {
+    margin: 5px 0;
+  }
+  footer.footer .container .trainingPackages ul li a {
+    color: #F15A29;
+    text-decoration: none;
+  }
+  footer.footer .container .trainingPackages::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 0px 15px 0 0;
+    background-color: #F15A29;
+    position: absolute;
+    top: 0;
+    left: -30px;
+    box-shadow: 15px 0 0 0 #ffffff;
+  }
+  footer.footer .container .trainingPackages::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 15px 0px 0 0;
+    background-color: #F15A29;
+    position: absolute;
+    top: 0;
+    right: -30px;
+    box-shadow: -15px 0 0 0 #ffffff;
+  }
+  footer.footer .container .quickLinks {
+    background-color: #F15A29;
+    border-radius: 15px 0 0 0;
+    padding: 40px 0;
+  }
+  footer.footer .container .quickLinks h3 {
+    text-align: center;
+    color: #ffffff;
+  }
+  footer.footer .container .quickLinks ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+  footer.footer .container .quickLinks ul li a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  footer.footer .copyright {
+    background-color: #5B1600;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+  }
+  

@@ -3,9 +3,7 @@
 @tailwind utilities;
 
 @layer base{
-  .container{ 
-    @apply max-w-full w-[1440px] px-5 mx-auto ;
-  }
+  
   .heading{
     @apply bg-gradient-to-r from-[#F15A29] via-[#5B1600] to-[#F15A29] inline-block text-transparent bg-clip-text text-[23px]
   }
