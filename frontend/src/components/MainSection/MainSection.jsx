@@ -11,6 +11,9 @@ import slider5 from '../../assets/slider-5.jpg'
 import yogaImg1 from '../../assets/yogaImg-1.jpg'
 import yogaImg2 from '../../assets/yogaImg-2.jpg'
 import yogaImg3 from '../../assets/yogaImg-3.jpg'
+import pose1 from '../../assets/pose1.jpg'
+import pose2 from '../../assets/pose2.jpg'
+import pose3 from '../../assets/pose3.jpg'
 
 
 
@@ -156,6 +159,44 @@ const MainSection = () => {
     </div>
   </div>
 </section>
+
+
+<section className="py-16 text-center">
+      <div className="container mx-auto">
+        <div className="mb-12">
+          <h1 className=" font-bold mb-4 heading">YOGA CERTIFICATION: YOGA TEACHER TRAININGS AND YOGA ALLIANCE CONTINUING EDUCATION PROGRAMS</h1>
+          <p className="max-w-3xl mx-auto mb-12">Certified with Yoga Alliance, SereneSoul offers 200 Hour (RYT 200), 300 Hour (RYT300), 500 Hour (RYT500) Yoga Teacher Training Courses in India and short duration Continuing Education Programs (YACEP) as per the ethical and educational framework set by Yoga Alliance around the World.</p>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-8">
+          <div className="flex flex-col items-center">
+            <div className="bg-gradient-to-t from-white via-[#f15a29] to-[#5b1600] rounded-lg p-4 w-max mx-auto  ">
+              <div className="bg-white p-2 rounded-lg">
+                <img src={pose1} alt="RYT 300 Certification" className="w-[300px]" />
+                <h4 className="mt-4 text-xl font-semibold text-[#5b1600]">RYT 300 Certification</h4>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col items-center">
+            <div className="bg-gradient-to-t from-white via-[#f15a29] to-[#5b1600] rounded-lg p-4 w-max mx-auto  ">
+              <div className="bg-white p-2 rounded-lg">
+                <img src={pose2} alt="RYT 200 Certification" className="w-[300px] " />
+                <h4 className="mt-4 text-xl font-semibold text-[#5b1600]">RYT 200 Certification</h4>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col items-center">
+            <div className="bg-gradient-to-t from-white via-[#f15a29] to-[#5b1600] rounded-lg p-4 w-max mx-auto  ">
+              <div className="bg-white p-2 rounded-lg">
+                <img src={pose3} alt="YACEP Continuing Education" className="w-[300px]" />
+                <h4 className="mt-4 text-xl font-semibold text-[#5b1600]">YACEP Continuing Education</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
     </>
     
