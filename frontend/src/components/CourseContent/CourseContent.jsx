@@ -7,6 +7,9 @@ import CC4 from '../../assets/CC4.svg'
 import CC5 from '../../assets/CC5.svg'
 import CC6 from '../../assets/CC6.svg'
 import CC7 from '../../assets/CC7.svg'
+import CC8 from '../../assets/CC8.jpg'
+
+
 
 const CourseContent = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
@@ -72,11 +75,11 @@ const CourseContent = () => {
   };
 
   return (
-    <section className="courseContent py-12">
+    <section className="courseContent py-12 container">
       <div className="container mx-auto">
         <div className="headingRow text-center mb-8">
-          <h1 className=" font-bold heading">Course Content</h1>
-          <p className="mt-4 text__para">There are numerous things to consider when anyone chooses a Yoga Teacher Training (200 Hour or 300 Hour), but the Course Content is one thing that should be non-negotiable. The India Yogashala course spread over 4 weeks of intensive yoga content that is important to become not only a registered yoga teacher but an inspiring yoga leader.</p>
+          <h1 className="font-bold heading">Course Content</h1>
+          <p className="mt-4 text__para">There are numerous things to consider when anyone chooses a Yoga Teacher Training (200 Hour or 300 Hour), but the Course Content is one thing that should be non-negotiable. The SereneSoul course spread over 4 weeks of intensive yoga content that is important to become not only a registered yoga teacher but an inspiring yoga leader.</p>
         </div>
         <div className="flex flex-col md:flex-row md:items-center">
           <div className="md:w-[900px]">
@@ -107,8 +110,8 @@ const CourseContent = () => {
               ))}
             </div>
           </div>
-          <div className="md:w-1/3 mt-8 md:mt-0 ml-16">
-            <img src="https://indiayogashala.com/demo//assets/yogaCourse.png" alt="Yoga Course" className="w-full rounded-l" />
+          <div className="md:w-1/3 mt-8 md:mt-0 flex justify-center md:justify-start">
+            <img src={CC8} alt="Yoga Course" className="w-[395px] rounded-xl lg:m-10 " />
           </div>
         </div>
       </div>

@@ -32,8 +32,8 @@ const MainSection = () => {
   return (
 
   <>
-    <section
-      className="relative bg-cover bg-no-repeat bg-center h-[550px] w-full"
+    <section data-aos="fade-up" data-aos-duration="1000" 
+      className="relative bg-cover bg-no-repeat bg-center h-[550px] w-full container my-section"
       style={{ backgroundImage: `url(${mainImage})` }} // Adjust path if necessary
     >
  <div className="absolute inset-0 flex items-center justify-center z-20 animate-fade-in mt-[-50px]">
@@ -110,7 +110,7 @@ const MainSection = () => {
       </div>
     </section>
 
-    <section className="mt-[250px] text-center container">
+    <section className="mt-[250px] text-center container my-section" data-aos="fade-up" data-aos-duration="1000" >
   <div className="container mx-auto">
     <div className="row">
       <div className="col">
@@ -161,7 +161,7 @@ const MainSection = () => {
 </section>
 
 
-<section className="py-16 text-center">
+<section className="py-16 text-center container my-section" data-aos="fade-up" data-aos-duration="1000" >
       <div className="container mx-auto">
         <div className="mb-12">
           <h1 className=" font-bold mb-4 heading">YOGA CERTIFICATION: YOGA TEACHER TRAININGS AND YOGA ALLIANCE CONTINUING EDUCATION PROGRAMS</h1>
