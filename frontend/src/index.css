@@ -7,13 +7,13 @@
     @apply max-w-full w-[1440px] px-5 mx-auto ;
   }
   .heading{
-    @apply bg-gradient-to-r from-[#F15A29] via-[#5B1600] to-[#F15A29] inline-block text-transparent bg-clip-text text-[23px]
+    @apply bg-gradient-to-r from-[#F15A29] to-[#5B1600] bg-clip-text text-transparent uppercase
   }
   .btn{
     @apply rounded-lg py-2 px-6 bg-gradient-to-r from-[#ff9978] to-[#f15a29] text-white hover:opacity-90 focus:outline-none
   }
   .text__para{
-    @apply text-[18px] leading-[30px] font-[400] text-textColor mt-[18px];
+    @apply text-[16px] leading-7 font-[400] text-textColor mt-[18px];
    }
    .header_top{
     @apply bg-[url('./assets/headerTop.png')] w-full bg-top bg-cover bg-no-repeat h-[90px]; 
@@ -21,4 +21,24 @@
    .mainImage{
     @apply  bg-[url('./assets/mainImage.png')] h-[550px] w-full bg-no-repeat bg-cover relative pt-[70px];
    }
+   h1{
+    @apply text-[35px]  font-bold mb-12 heading
+   }
+   h2{
+    @apply text-[30px] bg-gradient-to-r from-[#F15A29] to-[#5B1600] bg-clip-text text-transparent
+    
+   }
+
+}
+
+@media only screen and (max-width:768px){
+  .heading{
+    @apply text-[25px] ;
+  }
+  h2{
+    @apply text-[20px]
+  }
+  .text__para{
+    @apply  text-[16px]  leading-5 mt-3;
+  }
 }
