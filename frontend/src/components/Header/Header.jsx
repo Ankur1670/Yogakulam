@@ -6,15 +6,15 @@ import './Header.css'; // Import custom CSS
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [activeTab, setActiveTab] = useState('Home');
+  const [activeTab, setActiveTab] = useState('');
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   const navTabs = [
     { path: '/home', label: 'Home' },
-    { path: '/about', label: 'About' },
+    { path: '/about', label: 'About', hasSubTabs: true },
     { path: '/class', label: 'Classes' },
-    { path: '/tt', label: 'YTTC' },
+    { path: '/tt', label: 'YTTC', hasSubTabs: true },
     { path: '/schedule', label: 'Schedule' },
     { path: '/contactus', label: 'Contact' },
   ];
@@ -58,6 +58,17 @@ const Header = () => {
                   <Link to={tab.path} className="block text-center">
                     {tab.label}
                   </Link>
+                  {tab.hasSubTabs && activeTab === tab.label && (
+                    <ul className="subTabs bg-white shadow-lg mt-2 rounded-lg">
+                      {tab.subTabs && tab.subTabs.map((subTab, idx) => (
+                        <li key={idx}>
+                          <Link to={subTab.path} className="block px-4 py-2 text-[#5b1600] hover:bg-[#f15a29] hover:text-white">
+                            {subTab.label}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </li>
               ))}
             </ul>
@@ -79,6 +90,17 @@ const Header = () => {
                   <Link to={tab.path} className="block">
                     {tab.label}
                   </Link>
+                  {tab.hasSubTabs && activeTab === tab.label && (
+                    <ul className="subTabs bg-white shadow-lg mt-2 rounded-lg">
+                      {tab.subTabs && tab.subTabs.map((subTab, idx) => (
+                        <li key={idx}>
+                          <Link to={subTab.path} className="block px-4 py-2 text-[#5b1600] hover:bg-[#f15a29] hover:text-white">
+                            {subTab.label}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </li>
               ))}
             </ul>

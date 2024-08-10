@@ -1,8 +1,11 @@
 import React from 'react'
+import TT2 from '../components/TT2/TT2'
 
 const TeacherTranning = () => {
   return (
-    <div>TeacherTranning</div>
+    <>
+    <TT2/>
+    </>
   )
 }
 
