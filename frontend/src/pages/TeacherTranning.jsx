@@ -1,11 +1,14 @@
 import React from 'react'
-import TT2 from '../components/TT2/TT2'
+import { Outlet } from 'react-router-dom';
 
 const TeacherTranning = () => {
   return (
     <>
-    <TT2/>
-    </>
+<div>
+      <h1>Teacher Training</h1>
+      {/* This renders the nested routes */}
+      <Outlet /> 
+    </div>    </>
   )
 }
 
