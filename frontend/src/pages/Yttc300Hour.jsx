@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import yttc from '../assets/yttc.png'
 import yttc2 from '../assets/yttc2.png'
 import tt2 from '../assets/tt2.jpg'
+import C2 from '../assets/C2.png'
+
 import { FaCheck } from "react-icons/fa6";
 import ScheduleCall from '../components/ScheduleCall/ScheduleCall';
 const Yttc300Hour = () => {
@@ -13,77 +15,154 @@ const Yttc300Hour = () => {
 
   const curriculumItems = [
     {
-        title: 'Hatha Yoga (Asana and philosophy)',
-        content: [
-          'What is classical Hatha Yoga?',
-          'What is Asana?',
-          'Asana with breath',
-          'Posture awareness',
-          'Sequence of Asanas',
-        ],
-      },
-    
-    {
-      title: 'Ashtanga Vinyasa (Complete Primary Series, lead in Mysore Style)',
+      title: 'Advanced Hatha Yoga (Asana and Breath Work)',
       content: [
-        'Utthita Hasta Padangushthasana',
-         'Utthita Parshvasahita', 
-         'Utthita Hasta Padangushthasana B',
-         'Utkatasana',
-         'Dandasana'
-        ],
+        'Refining classical Hatha Yoga practices',
+        'Intermediate to advanced Asanas',
+        'Integration of breath with movement',
+        'Advanced posture awareness and alignment',
+        'Developing personal practice sequences',
+      ],
     },
     {
-      title: 'Pranayama and breath (Practice and Theory)',
-      content: ['Item 1', 'Item 2', 'Item 3'],
+      title: 'Ashtanga Vinyasa (Deepening Primary Series)',
+      content: [
+        'Complete Primary Series with detailed alignment',
+        'Introduction to Intermediate Series',
+        'Mysore Style Practice and its benefits',
+        'Key transitions and flow',
+        'Building strength and flexibility through Vinyasa',
+      ],
     },
     {
-      title: 'Yogic Anatomy and Physiology (based on Yogic Point of View)',
-      content: ['Item 1', 'Item 2', 'Item 3'],
+      title: 'Pranayama (Intermediate Practices and Theory)',
+      content: [
+        'Intermediate Pranayama techniques',
+        'Introduction to Kumbhaka (Breath Retention)',
+        'Nadi Shodhana and its benefits',
+        'Pranayama and the subtle body',
+        'Daily Pranayama practice routine',
+      ],
     },
     {
-      title: 'Asana Alignment and Adjustments (Nectar of the asana)',
-      content: ['Item 1', 'Item 2', 'Item 3'],
+      title: 'Yogic Anatomy and Physiology (In-depth Study)',
+      content: [
+        'Anatomy of advanced asanas',
+        'Understanding the nervous and endocrine systems',
+        'The subtle body: Chakras and Nadis',
+        'Preventing injuries in yoga practice',
+        'Functional anatomy for yoga teachers',
+      ],
     },
     {
-      title: 'Yoga Darshan (Philosophy)',
-      content: ['Item 1', 'Item 2', 'Item 3'],
+      title: 'Asana Alignment and Adjustments (Intermediate Techniques)',
+      content: [
+        'Detailed study of alignment in key postures',
+        'Safe and effective adjustments',
+        'Modifications for different body types',
+        'Therapeutic applications of adjustments',
+        'Balancing effort and ease in asanas',
+      ],
     },
     {
-      title: 'Mantra Yoga (Yogic Mantras- Meaning and Purpose)',
-      content: ['Item 1', 'Item 2', 'Item 3'],
+      title: 'Yoga Philosophy (Advanced Concepts)',
+      content: [
+        'Deeper exploration of Patanjali’s Yoga Sutras',
+        'Introduction to Bhagavad Gita',
+        'Understanding the concept of Dharma',
+        'Philosophy of Karma Yoga',
+        'Integrating philosophy into teaching',
+      ],
     },
     {
-      title: 'Dhyana (Meditation- Practice and Theory)',
-      content: ['Item 1', 'Item 2', 'Item 3'],
+      title: 'Mantra Yoga (Chanting and Sound Meditation)',
+      content: [
+        'Introduction to Vedic and Yogic mantras',
+        'Chanting practices and their benefits',
+        'The science of sound and vibration',
+        'Daily mantra meditation practice',
+        'Integrating mantras into yoga sessions',
+      ],
     },
     {
-      title: 'Pratyahara - Yoga Nidra (Practice and Theory)',
-      content: ['Item 1', 'Item 2', 'Item 3'],
+      title: 'Dhyana (Meditation Practice and Theory)',
+      content: [
+        'Introduction to various meditation techniques',
+        'Guided meditation practices',
+        'The role of meditation in yoga',
+        'Developing a personal meditation practice',
+        'Meditation and mindfulness',
+      ],
     },
     {
-      title: 'Shatkarma (Yogic Cleansing Theory and Practice- Neti, Tratak, Kapalbhati)',
-      content: ['Item 1', 'Item 2', 'Item 3'],
+      title: 'Pratyahara and Yoga Nidra (Sensory Withdrawal and Deep Relaxation)',
+      content: [
+        'Introduction to Yoga Nidra',
+        'Techniques for sensory withdrawal',
+        'Exploring different stages of Yoga Nidra',
+        'Guided practices for deep relaxation',
+        'Incorporating Pratyahara into daily life',
+      ],
     },
     {
-      title: 'History of Yoga (Ancient Purpose of Yogic Practices)',
-      content: ['Item 1', 'Item 2', 'Item 3'],
+      title: 'Shatkarma (Yogic Cleansing Techniques)',
+      content: [
+        'Introduction to basic Shatkarmas: Jala Neti, Kapalbhati',
+        'Importance of cleansing in yoga practice',
+        'Step-by-step guide to Shatkarmas',
+        'Benefits of regular practice',
+        'Integrating cleansing practices into your routine',
+      ],
     },
     {
-      title: 'Yogic Lifestyle (Yoga as a life)',
-      content: ['Item 1', 'Item 2', 'Item 3'],
+      title: 'History and Evolution of Yoga (Foundation and Growth)',
+      content: [
+        'Overview of Yoga’s history',
+        'Evolution of different yoga schools',
+        'Yoga’s journey to the West',
+        'Modern-day yoga practices',
+        'Understanding traditional vs. contemporary yoga',
+      ],
     },
     {
-      title: 'Sanskrit (Language of Yoga and Vedic scriptures)',
-      content: ['Item 1', 'Item 2', 'Item 3'],
+      title: 'Yogic Lifestyle and Ethics (Living Yoga)',
+      content: [
+        'Introduction to yogic diet and nutrition',
+        'Principles of Sattvic living',
+        'Ethical guidelines for yoga teachers',
+        'Yoga as a lifestyle beyond the mat',
+        'Balancing personal and professional life as a yogi',
+      ],
     },
     {
-      title: 'Teaching Methodology (Core of Yoga Teacher Training Course)',
-      content: ['Item 1', 'Item 2', 'Item 3'],
+      title: 'Sanskrit (Language of Yoga)',
+      content: [
+        'Introduction to key yoga terms in Sanskrit',
+        'Basic Sanskrit pronunciation',
+        'Chanting in Sanskrit',
+        'Understanding the meaning of yoga terms',
+        'Reading and chanting from classical texts',
+      ],
     },
     {
-      title: 'Ayurveda (Food and Natural)',
-      content: ['Item 1', 'Item 2', 'Item 3'],
+      title: 'Teaching Methodology (Enhancing Teaching Skills)',
+      content: [
+        'Developing effective teaching strategies',
+        'Creating balanced class sequences',
+        'Teaching mixed-level classes',
+        'Improving verbal and non-verbal communication',
+        'Building confidence as a yoga teacher',
+      ],
+    },
+    {
+      title: 'Ayurveda and Yoga (Basic Introduction)',
+      content: [
+        'Introduction to Ayurveda and its principles',
+        'Understanding your dosha (body type)',
+        'Ayurvedic diet and lifestyle tips for yogis',
+        'Seasonal routines according to Ayurveda',
+        'Incorporating Ayurveda into yoga practice',
+      ],
     },
   ];
 
@@ -274,9 +353,9 @@ const Yttc300Hour = () => {
             </div>
           ))}
         </div>
-        <div className="md:w-1/2 flex justify-center">
+        <div className="md:w-1/2 h-1/2 flex justify-center">
           <img
-            src="https://indiayogashala.com/demo/assets/features.jpg"
+            src={C2}
             alt="Curriculum"
             className="w-3/4"
           />

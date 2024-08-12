@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import TT2 from '../components/TT2/TT2.jsx'
+import C1 from '../assets/C1.png'
+
 import ScheduleCall from '../components/ScheduleCall/ScheduleCall.jsx'
 import { FaCheck } from "react-icons/fa6";
 const Yttc200Hour = () => {
@@ -11,77 +13,154 @@ const Yttc200Hour = () => {
 
   const curriculumItems = [
     {
-        title: 'Hatha Yoga (Asana and philosophy)',
-        content: [
-          'What is classical Hatha Yoga?',
-          'What is Asana?',
-          'Asana with breath',
-          'Posture awareness',
-          'Sequence of Asanas',
-        ],
-      },
-    
-    {
-      title: 'Ashtanga Vinyasa (Complete Primary Series, lead in Mysore Style)',
+      title: 'Hatha Yoga (Asana and Basics)',
       content: [
-        'Utthita Hasta Padangushthasana',
-         'Utthita Parshvasahita', 
-         'Utthita Hasta Padangushthasana B',
-         'Utkatasana',
-         'Dandasana'
-        ],
+        'Introduction to Hatha Yoga',
+        'Fundamental Asanas',
+        'Proper alignment and posture',
+        'Understanding the breath in asanas',
+        'Basic sequence of Hatha Yoga postures',
+      ],
     },
     {
-      title: 'Pranayama and breath (Practice and Theory)',
-      content: ['Item 1', 'Item 2', 'Item 3'],
+      title: 'Ashtanga Vinyasa (Primary Series Introduction)',
+      content: [
+        'Introduction to Ashtanga Vinyasa Yoga',
+        'Surya Namaskar A & B (Sun Salutations)',
+        'Standing postures of the Primary Series',
+        'Seated postures of the Primary Series',
+        'Introduction to Vinyasa flow',
+      ],
     },
     {
-      title: 'Yogic Anatomy and Physiology (based on Yogic Point of View)',
-      content: ['Item 1', 'Item 2', 'Item 3'],
+      title: 'Pranayama (Breathing Techniques and Theory)',
+      content: [
+        'Introduction to Pranayama',
+        'Basic breathing techniques: Ujjayi, Nadi Shodhana',
+        'Understanding the breath and its connection to mind and body',
+        'Introduction to breath retention (Kumbhaka)',
+        'Daily Pranayama practice routine',
+      ],
     },
     {
-      title: 'Asana Alignment and Adjustments (Nectar of the asana)',
-      content: ['Item 1', 'Item 2', 'Item 3'],
+      title: 'Yogic Anatomy and Physiology (Basics)',
+      content: [
+        'Introduction to the human body in relation to yoga',
+        'Basic anatomy relevant to yoga practice',
+        'Understanding the muscular and skeletal systems',
+        'Basic understanding of the nervous system',
+        'Effects of yoga on the body systems',
+      ],
     },
     {
-      title: 'Yoga Darshan (Philosophy)',
-      content: ['Item 1', 'Item 2', 'Item 3'],
+      title: 'Asana Alignment and Adjustments (Foundations)',
+      content: [
+        'Principles of safe alignment in basic postures',
+        'Introduction to hands-on adjustments',
+        'Understanding different body types and limitations',
+        'Common misalignments and corrections',
+        'Balancing stability and flexibility in asanas',
+      ],
     },
     {
-      title: 'Mantra Yoga (Yogic Mantras- Meaning and Purpose)',
-      content: ['Item 1', 'Item 2', 'Item 3'],
+      title: 'Yoga Philosophy (Introduction)',
+      content: [
+        'Introduction to the Eight Limbs of Yoga (Ashtanga Yoga)',
+        'Basic concepts of Patanjali’s Yoga Sutras',
+        'Introduction to Yamas and Niyamas (Ethical Guidelines)',
+        'Understanding the concept of Dharma',
+        'Introduction to the philosophy of Karma Yoga',
+      ],
     },
     {
-      title: 'Dhyana (Meditation- Practice and Theory)',
-      content: ['Item 1', 'Item 2', 'Item 3'],
+      title: 'Mantra Yoga (Introduction to Chanting)',
+      content: [
+        'Introduction to basic yoga mantras',
+        'The significance of OM and its variations',
+        'Chanting practices and their mental effects',
+        'Introduction to Vedic chanting',
+        'Incorporating mantra into daily practice',
+      ],
     },
     {
-      title: 'Pratyahara - Yoga Nidra (Practice and Theory)',
-      content: ['Item 1', 'Item 2', 'Item 3'],
+      title: 'Dhyana (Meditation Basics)',
+      content: [
+        'Introduction to meditation and its purpose',
+        'Basic meditation techniques',
+        'Guided meditation practices',
+        'Developing concentration and focus',
+        'Establishing a personal meditation practice',
+      ],
     },
     {
-      title: 'Shatkarma (Yogic Cleansing Theory and Practice- Neti, Tratak, Kapalbhati)',
-      content: ['Item 1', 'Item 2', 'Item 3'],
+      title: 'Pratyahara (Introduction to Sensory Withdrawal)',
+      content: [
+        'Introduction to Pratyahara and its importance in yoga',
+        'Basic techniques for sensory withdrawal',
+        'Exploring Yoga Nidra (Yogic Sleep)',
+        'Guided Yoga Nidra practice',
+        'Incorporating Pratyahara into daily life',
+      ],
     },
     {
-      title: 'History of Yoga (Ancient Purpose of Yogic Practices)',
-      content: ['Item 1', 'Item 2', 'Item 3'],
+      title: 'Shatkarma (Yogic Cleansing Basics)',
+      content: [
+        'Introduction to Shatkarma',
+        'Basic cleansing techniques: Jala Neti, Kapalbhati',
+        'Understanding the benefits of cleansing practices',
+        'Daily cleansing routine for yogis',
+        'Preparation for advanced Shatkarma practices',
+      ],
     },
     {
-      title: 'Yogic Lifestyle (Yoga as a life)',
-      content: ['Item 1', 'Item 2', 'Item 3'],
+      title: 'History of Yoga (Foundations)',
+      content: [
+        'Overview of the history of yoga',
+        'Evolution of yoga from ancient to modern times',
+        'Introduction to key figures in yoga history',
+        'The spread of yoga to the West',
+        'Understanding the relevance of historical practices today',
+      ],
     },
     {
-      title: 'Sanskrit (Language of Yoga and Vedic scriptures)',
-      content: ['Item 1', 'Item 2', 'Item 3'],
+      title: 'Yogic Lifestyle (Foundational Practices)',
+      content: [
+        'Introduction to yogic diet and nutrition',
+        'Principles of a Sattvic lifestyle',
+        'Ethical considerations for yogis',
+        'Daily routines and practices for a yogic lifestyle',
+        'Balancing personal life with yogic practices',
+      ],
     },
     {
-      title: 'Teaching Methodology (Core of Yoga Teacher Training Course)',
-      content: ['Item 1', 'Item 2', 'Item 3'],
+      title: 'Sanskrit (Introduction to the Language of Yoga)',
+      content: [
+        'Introduction to key Sanskrit terms used in yoga',
+        'Basic Sanskrit pronunciation',
+        'Understanding common yoga-related Sanskrit words',
+        'Introduction to chanting in Sanskrit',
+        'The significance of Sanskrit in yoga',
+      ],
     },
     {
-      title: 'Ayurveda (Food and Natural)',
-      content: ['Item 1', 'Item 2', 'Item 3'],
+      title: 'Teaching Methodology (Foundations of Teaching)',
+      content: [
+        'Introduction to the principles of teaching yoga',
+        'Creating a safe and supportive environment',
+        'Basic sequencing of a yoga class',
+        'Effective communication skills for teachers',
+        'Introduction to teaching different levels of students',
+      ],
+    },
+    {
+      title: 'Ayurveda and Yoga (Basic Concepts)',
+      content: [
+        'Introduction to Ayurveda and its connection to yoga',
+        'Basic understanding of the three doshas (body types)',
+        'Simple Ayurvedic dietary recommendations',
+        'Daily routines according to Ayurveda',
+        'Incorporating Ayurvedic principles into yoga practice',
+      ],
     },
   ];
 
@@ -195,9 +274,9 @@ const Yttc200Hour = () => {
             </div>
           ))}
         </div>
-        <div className="md:w-1/2 flex justify-center">
+        <div className="md:w-1/2 h-1/2 flex justify-center">
           <img
-            src="https://indiayogashala.com/demo/assets/features.jpg"
+            src={C1}
             alt="Curriculum"
             className="w-3/4"
           />
