@@ -9,6 +9,7 @@ export default {
       colors:{
         brownColor:"#5B1600",
         textColor:"#212925",
+        
 
       },
       

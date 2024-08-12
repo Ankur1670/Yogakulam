@@ -11,6 +11,7 @@ import IY from '../assets/IY.jpg'
 import './Class.css'
 import yttc from '../assets/yttc.png'
 import yttc2 from '../assets/yttc2.png'
+import { Link } from 'react-router-dom';
 
 
 
@@ -172,9 +173,11 @@ const Class = () => {
               <p className="text-sm mt-2 text__para text-white"><strong>Instructor Bio:</strong> {classData.instructorBio}</p>
             </div>
             {/* Enrollment Button */}
+            <Link to='/enroll'>
             <button className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 w-[200px] mx-auto btn text__para">
               Enroll Now
             </button>
+            </Link>
             {/* Social Media Icons */}
             
           </div>

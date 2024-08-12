@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import './Schedule.css';
+import yttc from '../assets/yttc.png'
+import yttc2 from '../assets/yttc2.png'
 
 // Example class data with additional details
 const classData = [
@@ -137,6 +139,27 @@ const Schedule = () => {
   };
 
   return (
+    <>
+     <section className="relative h-[500px] overflow-hidden">
+      <div className="container-fluid">
+        <div className="relative">
+          <img 
+            src={yttc} 
+            alt="Slider Image" 
+            className="w-full h-[500px] object-cover" 
+          />
+          <p className="text-white my-20  mt-24 text-center text-[35px] max-w-[900px] mx-auto absolute top-[15%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+            SCHEDULE
+          </p>
+          <img 
+            src={yttc2}
+            alt="" 
+            className="absolute bottom-[-2px] left-0 w-full z-20" 
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#ff521a] to-[#300c00] opacity-70 z-0"></div>
+        </div>
+      </div>
+    </section>
     <div className="container mx-auto px-4 py-16">
       {/* Header Section */}
       <header className="text-center mb-12">
@@ -147,7 +170,7 @@ const Schedule = () => {
       </header>
 
       {/* Calendar View */}
-      <div className="flex justify-center mb-12">
+      <div className="flex justify-center mb-12 ">
         <Calendar
           onChange={handleDateChange}
           value={date}
@@ -158,25 +181,25 @@ const Schedule = () => {
       {/* Display schedule for the selected date */}
       {selectedDate && (
         <div>
-          <h2 className="text-3xl font-bold mb-4 text-orange-600">Schedule for {selectedDate}</h2>
+          <h1 className=" font-bold mb-4 text-center heading">Schedule for {selectedDate}</h1>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {getScheduleForDay(selectedDate).map((classInfo, index) => (
-              <div key={index} className="selected-date-card p-6">
-                <h3 className="text-2xl font-bold mb-2 text-orange-600">{classInfo.name}</h3>
-                <p className="text-base mb-2">{classInfo.description}</p>
+              <div key={index} className="selected-date-card p-6 border-[05px] border-[#F15A29]">
+                <h3 className="text-2xl font-bold mb-2 text-orange-600 ">{classInfo.name}</h3>
+                <p className="text-base mb-2 text__para">{classInfo.description}</p>
                 <ul className="list-disc list-inside mb-4">
                   {classInfo.timings[selectedDate]?.map((timing, idx) => (
                     <li key={idx} className="text-gray-700">{timing}</li>
                   ))}
                 </ul>
                 <div className="mb-4">
-                  <strong>Accommodation:</strong> {classInfo.accommodation}
+                  <strong className='text-orange-600'>Accommodation:</strong> {classInfo.accommodation}
                 </div>
                 <div className="mb-4">
-                  <strong>Food:</strong> {classInfo.food}
+                  <strong className='text-orange-600'>Food:</strong> {classInfo.food}
                 </div>
                 <div>
-                  <strong>Curriculum:</strong> {classInfo.curriculum}
+                  <strong className='text-orange-600'>Curriculum:</strong> {classInfo.curriculum}
                 </div>
               </div>
             ))}
@@ -184,6 +207,7 @@ const Schedule = () => {
         </div>
       )}
     </div>
+    </>
   );
 }
 

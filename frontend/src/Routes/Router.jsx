@@ -11,6 +11,9 @@ import { Routes, Route } from 'react-router-dom';
 import Yttc200Hour from '../pages/Yttc200Hour';
 import Yttc300Hour from '../pages/Yttc300Hour';
 import Yttc500Hour from '../pages/Yttc500Hour';
+import Login from '../pages/Login';
+import Signup from '../pages/Signup';
+import EnrollForm from '../pages/EnrollForm';
 
 const Router = () => {
   return (
@@ -29,6 +32,10 @@ const Router = () => {
 
       <Route path='/schedule' element={<Schedule />} />
       <Route path='/contactus' element={<Contactus />} />
+      <Route path='/login' element={<Login/>}/>
+      <Route path='/register' element={<Signup/>}/>
+      <Route path="/enroll" element={<EnrollForm />} />
+
     </Routes>
   );
 };

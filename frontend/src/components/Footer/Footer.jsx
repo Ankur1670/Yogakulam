@@ -36,8 +36,8 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className="absolute top-0 left-[-30px] bg-[#f15a29] h-[30px] w-[30px] rounded-tr-[15px]"></div>
-            <div className="absolute top-0 right-[-30px] bg-[#f15a29] h-[30px] w-[30px] rounded-tl-[15px]"></div>
+            {/* <div className="absolute top-0 left-[-30px] bg-[#f15a29] h-[30px] w-[30px] rounded-tr-[15px]"></div>
+            <div className="absolute top-0 right-[-30px] bg-[#f15a29] h-[30px] w-[30px] rounded-tl-[15px]"></div> */}
           </div>
 
           {/* Contact Details */}

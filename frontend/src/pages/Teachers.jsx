@@ -6,6 +6,8 @@ import Teacher1 from '../assets/Teacher1.png'
 import Teacher2 from '../assets/Teacher2.png'
 import Teacher3 from '../assets/Teacher3.png'
 import Teacher4 from '../assets/Teacher4.png'
+import Login from './Login';
+import Signup from './Signup';
 
 
 
@@ -73,7 +75,8 @@ OUR YOGA MASTERS          </p>
                 </div>
             </div>
         </section>
-
+<Login/>
+<Signup/>
     </>
   )
 }
