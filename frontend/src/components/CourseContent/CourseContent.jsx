@@ -75,17 +75,17 @@ const CourseContent = () => {
   };
 
   return (
-    <section className="courseContent py-12 container">
+    <section className="courseContent py-12 container my-section" data-aos="fade-up" data-aos-duration="1000">
       <div className="container mx-auto">
         <div className="headingRow text-center mb-8">
-          <h1 className="font-bold heading">Course Content</h1>
+          <h1 className="font-bold heading my-section"ata-aos="fade-up" data-aos-duration="1000">Course Content</h1>
           <p className="mt-4 text__para">There are numerous things to consider when anyone chooses a Yoga Teacher Training (200 Hour or 300 Hour), but the Course Content is one thing that should be non-negotiable. The SereneSoul course spread over 4 weeks of intensive yoga content that is important to become not only a registered yoga teacher but an inspiring yoga leader.</p>
         </div>
         <div className="flex flex-col md:flex-row md:items-center">
           <div className="md:w-[900px]">
             <div className="dropdownBox bg-gradient-to-b from-[#f15a29] to-[#d83601] rounded-lg p-4">
               {courseContent.map((item, index) => (
-                <div key={index} className="dropdownRow flex items-center mb-4 last:mb-0">
+                <div key={index} className="dropdownRow flex items-center mb-4 last:mb-0 my-section ">
                   <div className="icon bg-white p-2 rounded-lg ">
                     <img src={item.icon} alt={item.title } className="w-10 bg-white" />
                   </div>

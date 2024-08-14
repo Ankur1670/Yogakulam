@@ -9,30 +9,25 @@ const Footer = () => {
         <div className="flex flex-wrap -mx-4">
           
           {/* Training Packages */}
-          <div className="order-1 sm:order-2 w-full sm:w-1/2 lg:w-1/3 px-4 relative">
+          <div className="order-1 sm:order-2 w-full sm:w-1/2 lg:w-1/3 px-4 relative my-section"data-aos="fade-up" data-aos-duration="1000">
             <div className="bg-white rounded-b-lg pt-10 pb-8 relative z-10">
               <img src={logo} alt="Logo" className="mx-auto mb-5" />
               <ul className="text-center">
+                
                 <li className="mb-2">
-                  <a href="https://indiayogashala.com/demo/course/200-hour-yoga-teacher-training-in-goa-india" className="text-[#f15a29]">200 Hour Yoga Teacher Training Goa</a>
+                  <a href="" className="text-[#f15a29]">200 Hour Yoga Teacher Training Rishikesh </a>
                 </li>
                 <li className="mb-2">
-                  <a href="https://indiayogashala.com/demo/course/200-hour-yoga-teacher-training-in-rishikesh-india" className="text-[#f15a29]">200 Hour Yoga Teacher Training Rishikesh</a>
+                  <a href="" className="text-[#f15a29]">300 Hour Yoga Teacher Training Rishikesh</a>
                 </li>
                 <li className="mb-2">
-                  <a href="https://indiayogashala.com/demo/" className="text-[#f15a29]">200 Hour Yoga Teacher Training Mysore</a>
+                  <a href="" className="text-[#f15a29]">500 Hour Yoga Teacher Training Rishikesh</a>
                 </li>
+                
+                
+                
                 <li className="mb-2">
-                  <a href="https://indiayogashala.com/demo/" className="text-[#f15a29]">Yoga Retreats in Goa</a>
-                </li>
-                <li className="mb-2">
-                  <a href="https://indiayogashala.com/demo/" className="text-[#f15a29]">Yoga Retreats in Rishikesh</a>
-                </li>
-                <li className="mb-2">
-                  <a href="https://indiayogashala.com/demo/" className="text-[#f15a29]">Yoga Retreats in Mysore</a>
-                </li>
-                <li className="mb-2">
-                  <a href="https://indiayogashala.com/demo/" className="text-[#f15a29]">SereneSoul</a>
+                  <a href="" className="text-[#f15a29]">SereneSoul</a>
                 </li>
               </ul>
             </div>
@@ -51,11 +46,11 @@ const Footer = () => {
           </div>
           <div className="flex items-center mb-4">
             <FaEnvelope className="text-white mr-3" />
-            <span>info@indiayogashala.com</span>
+            <span>SS@gmail.com</span>
           </div>
           <div className="flex items-center mb-4">
             <FaPhone className="text-white mr-3" />
-            <span>+91 91493 07205</span>
+            <span>+91 7817025635</span>
           </div>
         </div>
         <div className="flex mt-5 space-x-4">
@@ -82,39 +77,35 @@ const Footer = () => {
               <h3 className="text-lg font-semibold text-center">Quick Links</h3>
               <ul className="mt-5 text-center">
                 <li className="mb-2">
-                  <a href="https://indiayogashala.com/demo/mentors" className="text-white">Our Trainers</a>
+                  <a href="" className="text-white">About SS</a>
                 </li>
                 <li className="mb-2">
-                  <a href="https://indiayogashala.com/demo/blogs" className="text-white">Blogs</a>
+                  <a href="" className="text-white">Teachers</a>
                 </li>
                 <li className="mb-2">
-                  <a href="https://indiayogashala.com/demo/gallery" className="text-white">Yoga Gallery</a>
+                  <a href="" className="text-white">YTTC</a>
                 </li>
                 <li className="mb-2">
-                  <a href="https://indiayogashala.com/demo/faq" className="text-white">FAQ</a>
+                  <a href="" className="text-white">Classes</a>
                 </li>
                 <li className="mb-2">
-                  <a href="https://indiayogashala.com/demo/testimonial" className="text-white">Testimonial</a>
+                  <a href="" className="text-white">Schedulw</a>
                 </li>
                 <li className="mb-2">
-                  <a href="https://indiayogashala.com/demo/about" className="text-white">About Us</a>
+                  <a href="" className="text-white">About Us</a>
                 </li>
                 <li className="mb-2">
-                  <a href="https://indiayogashala.com/demo/contact" className="text-white">Contact Us</a>
+                  <a href="" className="text-white">Contact Us</a>
                 </li>
-                <li className="mb-2">
-                  <a href="https://indiayogashala.com/demo/terms-and-conditions" className="text-white">T & C</a>
-                </li>
-                <li className="mb-2">
-                  <a href="https://indiayogashala.com/demo/privacy-policy" className="text-white">Privacy Policy</a>
-                </li>
+              
+               
               </ul>
             </div>
           </div>
         </div>
       </div>
       <div className="bg-[#5b1600] py-2 text-center text-white">
-        <p className="mb-0">Copyright © 2022 | SereneSoul</p>
+        <p className="mb-0">Copyright © 2024 | SereneSoul</p>
       </div>
     </footer>
   );

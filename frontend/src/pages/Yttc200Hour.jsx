@@ -169,22 +169,22 @@ const Yttc200Hour = () => {
     <>
     <TT2/>
 <ScheduleCall/>
-<section className="py-16 text-center bg-gray-50">
+<section className="py-16 text-center bg-gray-50 my-section" data-aos="fade-up" data-aos-duration="1000">
       <div className="container mx-auto px-4">
         <div className="flex flex-col">
           <div className="mb-8">
-            <h2 className="heading font-semibold mb-4">Why Study 200 Hour Yoga Teacher Training at India Yogashala in Rishikesh?</h2>
+            <h2 className="heading font-semibold mb-4 my-section" data-aos="fade-up" data-aos-duration="1000">Why Study 200 Hour Yoga Teacher Training at India Yogashala in Rishikesh?</h2>
             <p className="max-w-3xl mx-auto mb-6 text__para">
               If you are curious about unraveling the essence of the self and life as a whole, then it is time to step into the world of yoga with our intensive 200 Hour Yoga TTC at India Yogshala. Begin your journey towards self-discovery & open yourself to limitless experiences of the mind, body, and spirit. The course is about creating alignment, bringing stability and strength to perform advanced postures and meditation techniques.
             </p>
-            <p className="max-w-3xl mx-auto mb-6 text__para">
+            <p className="max-w-3xl mx-auto mb-6 text__para my-section"data-aos="fade-up" data-aos-duration="1000">
               Learn how to let go of the held up stress in your body and mind & attain a state of complete balance through traditional Yoga immersions consisting of Asana practices, Pranayama (Breath work), Yoga Philosophy, and intensive Yoga Anatomy. Become a serious yoga practitioner and lead the way to help others undergo transformative experiences as a recognized yoga teacher. Spread the pure & healthy way of living. Become a Yoga Alliance certified Yoga teacher and carry forward the 5000-year-old legacy of the greatest mind-body art form.
             </p>
           </div>
 
           <div className="mb-8">
-            <h2 className="heading font-semibold mb-4">Who is Eligible for 200 Hour Yoga TT in Rishikesh India?</h2>
-            <ul className="list-none max-w-3xl mx-auto space-y-4 text-left">
+            <h2 className="heading font-semibold mb-4 my-section" data-aos="fade-up" data-aos-duration="1000">Who is Eligible for 200 Hour Yoga TT in Rishikesh India?</h2>
+            <ul className="list-none max-w-3xl mx-auto space-y-4 text-left my-section"data-aos="fade-up" data-aos-duration="1000">
               <li className="flex items-center text__para">
                 <FaCheck className="text-orange-500 mr-2" />
                 Aspiring yoga teachers & practitioners seeking the path of authentic immersions of the traditional forms of yoga.
@@ -201,8 +201,8 @@ const Yttc200Hour = () => {
           </div>
 
           <div>
-            <h2 className="heading font-semibold mb-4">200 Hour Yoga Teacher Training Program Outcomes</h2>
-            <ul className="list-none max-w-3xl mx-auto space-y-4 text-left">
+            <h2 className="heading font-semibold mb-4 my-section"data-aos="fade-up" data-aos-duration="1000">200 Hour Yoga Teacher Training Program Outcomes</h2>
+            <ul className="list-none max-w-3xl mx-auto space-y-4 text-left my-section"data-aos="fade-up" data-aos-duration="1000">
 
 
                 
@@ -242,7 +242,7 @@ const Yttc200Hour = () => {
       </div>
     </section>
 
-    <div className="mt-5 container">
+    <div className="mt-5 container my-section" data-aos="fade-up" data-aos-duration="2000">
       <h1 className="mb-3 heading">Curriculum</h1>
       <div className="flex flex-col md:flex-row">
         <div className="md:w-1/2">

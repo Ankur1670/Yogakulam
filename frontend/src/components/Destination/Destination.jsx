@@ -36,11 +36,11 @@ const Destination = () => {
   ];
 
   return (
-    <section className="destination py-16 container">
+    <section className="destination py-16 container my-section" data-aos="fade-up" data-aos-duration="1000">
       <div className="container mx-auto">
         <div className="headingRow text-center mb-12">
-          <h1 className="text-4xl font-bold">Our Best Yoga Destination</h1>
-          <p className="mt-4 text-gray-700">
+          <h1 className="text-4xl font-bold my-section " data-aos="fade-up" data-aos-duration="1000">Our Best Yoga Destination</h1>
+          <p className="mt-4 text-gray-700 my-section" data-aos="fade-up" data-aos-duration="1000">
             SereneSoul has chosen the best yoga-centred getaways in India and abroad to get you an ultimate zen experience. 
             There is not better way to recharge your mind, body and soul than practicing yoga and meditation in a fabulous setting, 
             full of amazing nature and landscapes.

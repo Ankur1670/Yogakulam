@@ -140,7 +140,7 @@ const Schedule = () => {
 
   return (
     <>
-     <section className="relative h-[500px] overflow-hidden">
+     <section className="relative h-[500px] overflow-hidden my-section"data-aos="fade-up" data-aos-duration="1000">
       <div className="container-fluid">
         <div className="relative">
           <img 
@@ -160,7 +160,7 @@ const Schedule = () => {
         </div>
       </div>
     </section>
-    <div className="container mx-auto px-4 py-16">
+    <div className="container mx-auto px-4 py-16 my-section" data-aos="fade-up" data-aos-duration="1000">
       {/* Header Section */}
       <header className="text-center mb-12">
         <h1 className="text-4xl font-bold mb-4 text-orange-600">Yoga Classes Schedule</h1>
@@ -170,7 +170,7 @@ const Schedule = () => {
       </header>
 
       {/* Calendar View */}
-      <div className="flex justify-center mb-12 ">
+      <div className="flex justify-center mb-12 my-section " data-aos="fade-up" data-aos-duration="1000">
         <Calendar
           onChange={handleDateChange}
           value={date}
@@ -181,10 +181,10 @@ const Schedule = () => {
       {/* Display schedule for the selected date */}
       {selectedDate && (
         <div>
-          <h1 className=" font-bold mb-4 text-center heading">Schedule for {selectedDate}</h1>
+          <h1 className=" font-bold mb-4 text-center heading my-section"data-aos="fade-up" data-aos-duration="1000">Schedule for {selectedDate}</h1>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {getScheduleForDay(selectedDate).map((classInfo, index) => (
-              <div key={index} className="selected-date-card p-6 border-[05px] border-[#F15A29]">
+              <div key={index} className="selected-date-card p-6 border-[05px] border-[#F15A29] my-section"data-aos="fade-up" data-aos-duration="1000">
                 <h3 className="text-2xl font-bold mb-2 text-orange-600 ">{classInfo.name}</h3>
                 <p className="text-base mb-2 text__para">{classInfo.description}</p>
                 <ul className="list-disc list-inside mb-4">

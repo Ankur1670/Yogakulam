@@ -24,7 +24,7 @@ const Cfrom = () => {
   };
 
   return (
-    <section className="leadGeneration py-0 pb-16 relative mt-20">
+    <section className="leadGeneration py-0 pb-16 relative mt-20 my-section" data-aos="fade-up" data-aos-duration="1000">
       <div className="container mx-auto">
         <div className="flex flex-wrap justify-center">
           {/* Image Section */}

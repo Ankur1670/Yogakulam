@@ -15,7 +15,7 @@ const SereneSoul = () => {
   return (
     <>
     <section
-      className="aboutpage bg-cover bg-center bg-fixed h-[80vh] relative container"
+      className="aboutpage bg-cover bg-center bg-fixed h-[80vh] relative container my-section" data-aos="fade-up" data-aos-duration="1000"
       style={{ backgroundImage: `url(${aboutMainImg})` }} // Correct way to reference the image
     >
       <div className="container-fluid ">
@@ -29,7 +29,7 @@ const SereneSoul = () => {
       </div>
     </section>
 
-    <section className="aboutContent py-16 container">
+    <section className="aboutContent py-16 container " >
       <div className="container mx-auto" data-aos="fade-up">
         <div className="row">
           <div className="col-md-12">
@@ -45,7 +45,7 @@ const SereneSoul = () => {
       </div>
     </section>
 
-    <section className="Course mb-3" >
+    <section className="Course mb-3 " >
       <div className="container mx-auto">
         <div
           className="imageContainer mb-3 rounded-lg"
@@ -70,7 +70,7 @@ const SereneSoul = () => {
       </div>
     </section>
 
-    <section className="Course mb-3">
+    <section className="Course mb-3 " >
       <div className="container mx-auto">
         <div
           className="imageContainer mb-3 rounded-lg"

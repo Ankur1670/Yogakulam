@@ -23,7 +23,7 @@ const Accomodation = () => {
   ];
 
   return (
-    <section className="accomodation bg-[#FFE4DC] rounded-lg p-6 container">
+    <section className="accomodation bg-[#FFE4DC] rounded-lg p-6 container my-section" data-aos="fade-up" data-aos-duration="1000">
     <div className="container mx-auto space-y-8 md:space-y-16">
       {sections.map((section, index) => (
         <div

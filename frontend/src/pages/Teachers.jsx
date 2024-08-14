@@ -21,7 +21,7 @@ const Teachers = () => {
 
   return (
     <>
-    <section className="relative h-[500px] overflow-hidden">
+    <section className="relative h-[500px] overflow-hidden my-section"data-aos="fade-up" data-aos-duration="1000">
       <div className="container-fluid">
         <div className="relative">
           <img 
@@ -41,7 +41,7 @@ OUR YOGA MASTERS          </p>
       </div>
     </section>
 
-    <section className="yogaTraine py-16 text-center">
+    <section className="yogaTraine py-16 text-center my-section" data-aos="fade-up" data-aos-duration="1000">
             <div className="container mx-auto px-4">
                 <div className="mb-12">
                     <h1 className="heading text-3xl md:text-4xl font-bold">
@@ -53,7 +53,7 @@ OUR YOGA MASTERS          </p>
                         yoga subjects in a professional, safe, and nurturing environment.
                     </p>
                 </div>
-                <div className="mt-48 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <div className="mt-48 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 my-section" data-aos="fade-up" data-aos-duration="1000">
                     {teachers.map((teacher, index) => (
                         <div key={index} className="relative bg-[#FFA88E] p-4 rounded-xl text-brown-800 flex flex-col items-center bottom-16 my-16 ">
                             <img

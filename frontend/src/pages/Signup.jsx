@@ -28,7 +28,7 @@ const Signup = () => {
   };
 
   return (
-    <div className="flex h-screen container">
+    <div className="flex h-screen container my-section" data-aos="fade-up" data-aos-duration="1000">
       {/* Left side: Image */}
       <div className="hidden md:flex md:w-1/2 h-full bg-cover bg-center" style={{ backgroundImage: `url(${backgroundImage})` }}>
         {/* Image container */}

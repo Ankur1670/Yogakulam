@@ -168,7 +168,7 @@ const Yttc300Hour = () => {
 
   return (
     <>
-       <section className="relative h-[500px] overflow-hidden">
+       <section className="relative h-[500px] overflow-hidden my-section"data-aos="fade-up" data-aos-duration="1000">
       <div className="container-fluid">
         <div className="relative">
           <img 
@@ -176,7 +176,7 @@ const Yttc300Hour = () => {
             alt="Slider Image" 
             className="w-full h-[500px] object-cover" 
           />
-          <p className="text-white my-20  mt-24 text-center text-[35px] max-w-[900px] mx-auto absolute top-[15%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+          <p className="text-white my-20  mt-24 text-center text-[35px] max-w-[900px] mx-auto absolute top-[15%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 ">
             300 Hour Yoga Teacher Training in Rishikesh, India
           </p>
           <img 
@@ -193,17 +193,17 @@ const Yttc300Hour = () => {
       <div className="container mx-auto">
         <div className="flex flex-wrap">
           <div className="md:w-1/2 px-4">
-            <h1 className="heading  font-bold mb-4">
+            <h1 className="heading  font-bold mb-4 my-section"data-aos="fade-up" data-aos-duration="1000">
               About 300 Hour Yoga Teacher Training in Rishikesh, India
             </h1>
-            <p className="text__para">
+            <p className="text__para my-section" data-aos="fade-up" data-aos-duration="1000">
               Journey to the Himalayan foothills, the land of gods & transformative experiences, the Yoga capital of the world, Rishikesh, India. A place where mind, body, and spirit find an equilibrium through the practice of traditional yoga based on teachings from the sacred Bhagavad Gita and the Yoga Sutras of Patanjali. Study from the yoga masters of India at the India Yogashala. This Yoga Alliance Certified 300 Hour Yoga Teacher Training (YTT) in Rishikesh India is designed for an aspiring yoga practitioner willing to take the first serious step towards self-transformation in the mind, body, & spirit. Become a part of the authentic community of yoga teachers & serious practitioners in the heart of the Yoga capital of the world.
             </p>
           </div>
           <div className="md:w-1/2 px-4 mt-8 md:mt-0">
   <div className="highlights bg-gradient-to-b from-[#f15a29] to-[#501400] rounded-lg text-white p-6">
     <p className="text-[35px] mb-4">Highlights & Overview</p>
-    <ul className="space-y-2">
+    <ul className="space-y-2 my-section" data-aos="fade-up" data-aos-duration="1000">
       
       <li className="flex items-start ">
         <FaCheck className="mr-2 mt-1" /> Detailed study of Yoga Asana
@@ -248,7 +248,7 @@ const Yttc300Hour = () => {
 
     <ScheduleCall/>
     
-    <section className="py-16 text-center bg-gray-50">
+    <section className="py-16 text-center bg-gray-50 my-section"data-aos="fade-up" data-aos-duration="1000">
   <div className="container mx-auto px-4">
     <div className="flex flex-col">
       <div className="mb-8">
@@ -261,7 +261,7 @@ const Yttc300Hour = () => {
         </p>
       </div>
 
-      <div className="mb-8">
+      <div className="mb-8 my-section" data-aos="fade-up" data-aos-duration="1000">
         <h2 className="heading font-semibold mb-4">Who is Eligible for 300 Hour Yoga TT in Rishikesh India?</h2>
         <ul className="list-none max-w-3xl mx-auto space-y-4 text-left">
           <li className="flex items-center text__para">
@@ -280,7 +280,7 @@ const Yttc300Hour = () => {
       </div>
 
       <div>
-        <h2 className="heading font-semibold mb-4">300 Hour Yoga Teacher Training Program Outcomes</h2>
+        <h2 className="heading font-semibold mb-4 my-section" data-aos="fade-up" data-aos-duration="1000">300 Hour Yoga Teacher Training Program Outcomes</h2>
         <ul className="list-none max-w-3xl mx-auto space-y-4 text-left">
           <li className="flex items-center text__para">
             <FaCheck className="text-orange-500 mr-2" />
@@ -321,7 +321,7 @@ const Yttc300Hour = () => {
 </section>
 
 
-<div className="mt-5 container">
+<div className="mt-5 container my-section" data-aos="fade-up" data-aos-duration="1000">
       <h1 className="mb-3 heading">Curriculum</h1>
       <div className="flex flex-col md:flex-row">
         <div className="md:w-1/2">

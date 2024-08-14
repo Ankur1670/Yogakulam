@@ -58,7 +58,7 @@ const ScheduleCall = () => {
 
   return (
     <section
-      className="scheduleCall bg-cover bg-no-repeat bg-top py-16 md:py-[70px] relative"
+      className="scheduleCall bg-cover bg-no-repeat bg-top py-16 md:py-[70px] relative my-section" data-aos="fade-up" data-aos-duration="1000"
       style={{ backgroundImage: `url(${scheduleCallImg})` }}
     >
       <div className="absolute inset-0 bg-black opacity-40"></div> {/* Overlay for better text visibility */}

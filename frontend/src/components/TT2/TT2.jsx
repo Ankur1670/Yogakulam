@@ -6,7 +6,7 @@ import { FiCheck } from 'react-icons/fi';
 const TT2 = () => {
   return (
     <>
-     <section className="relative h-[500px] overflow-hidden">
+     <section className="relative h-[500px] overflow-hidden my-section" data-aos="fade-up" data-aos-duration="1000">
       <div className="container-fluid">
         <div className="relative">
           <img 
@@ -27,7 +27,7 @@ const TT2 = () => {
       </div>
     </section>
 
-    <section className="aboutUs py-[70px]">
+    <section className="aboutUs py-[70px] my-section"data-aos="fade-up" data-aos-duration="1000">
       <div className="container mx-auto">
         <div className="flex flex-wrap">
           <div className="md:w-1/2 px-4">

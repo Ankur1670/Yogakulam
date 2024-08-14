@@ -27,7 +27,7 @@ const Login = () => {
   };
 
   return (
-    <div className="flex h-screen container">
+    <div className="flex h-screen container my-section" data-aos="fade-up" data-aos-duration="1000">
       {/* Left side: Form */}
       <div className="flex flex-col justify-center items-center w-full md:w-1/2 bg-gray-100">
         <h2 className="heading font-bold mb-8 text-center">Login</h2>
