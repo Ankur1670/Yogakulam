@@ -1,18 +1,30 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import axios from 'axios';
 import backgroundImage from '../assets/login.jpg'; // Update with the correct path to your image
 
 const Signup = () => {
   const [formData, setFormData] = useState({ email: '', password: '', name: '', mobile: '' });
+  const [error, setError] = useState('');
+  const navigate = useNavigate(); // Used for redirecting after successful signup
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle signup logic here
+    try {
+      const response = await axios.post('http://localhost:5000/api/signup', formData);
+      if (response.data) {
+        console.log('Signup successful:', response.data);
+        navigate('/login'); // Redirect to the login page after successful signup
+      }
+    } catch (err) {
+      console.error('Error during signup:', err);
+      setError('Signup failed. Please try again.');
+    }
   };
 
   return (
@@ -26,6 +38,7 @@ const Signup = () => {
       <div className="flex flex-col justify-center items-center w-full md:w-1/2 h-full bg-gray-200 p-6">
         <h2 className="text-3xl font-bold mb-6 text-center">Sign Up</h2>
         <form onSubmit={handleSubmit} className='w-full max-w-md py-4'>
+          {error && <p className="text-red-500 mb-4">{error}</p>}
           <div className="mb-5">
             <input
               type="text"

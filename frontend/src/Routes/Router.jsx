@@ -14,6 +14,9 @@ import Yttc500Hour from '../pages/Yttc500Hour';
 import Login from '../pages/Login';
 import Signup from '../pages/Signup';
 import EnrollForm from '../pages/EnrollForm';
+import AdminLogin from '../pages/AdminLogin';
+import AdminDashboard from '../pages/AdminDashboard';
+
 
 const Router = () => {
   return (
@@ -32,9 +35,17 @@ const Router = () => {
 
       <Route path='/schedule' element={<Schedule />} />
       <Route path='/contactus' element={<Contactus />} />
+    
       <Route path='/login' element={<Login/>}/>
+     
       <Route path='/register' element={<Signup/>}/>
       <Route path="/enroll" element={<EnrollForm />} />
+
+      <React.Fragment>
+        <Route path="/admin/login" element={<AdminLogin />} />
+        <Route path="/admin/dashboard" element={<AdminDashboard />} />
+        {/* Other routes */}
+      </React.Fragment>
 
     </Routes>
   );

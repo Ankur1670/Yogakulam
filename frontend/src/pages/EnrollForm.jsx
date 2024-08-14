@@ -25,10 +25,10 @@ const EnrollForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    console.log('Submitting form data:', formData); // Log form data for debugging
+    console.log('Submitting form data:', formData);
 
     try {
-      const response = await fetch('/api/enrollments', {
+      const response = await fetch('http://localhost:5173/api/enrollments', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -37,11 +37,10 @@ const EnrollForm = () => {
       });
 
       const result = await response.json();
-      console.log('Response from server:', result); // Log server response
+      console.log('Response from server:', result);
 
       if (response.ok) {
         alert('Form submitted successfully');
-        // Clear form fields after successful submission
         setFormData({
           firstName: '',
           lastName: '',
@@ -247,22 +246,23 @@ const EnrollForm = () => {
           </div>
           {/* Experience */}
           <div className="mb-4">
-            <label className="block text-sm font-medium text-white">Experience*</label>
-            <textarea
+            <label className="block text-sm font-medium text-white">Any Experience</label>
+            <input
+              type="text"
               name="experience"
               value={formData.experience}
               onChange={handleInputChange}
               className="mt-1 block w-full px-3 py-2 border border-[#ff521a] rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
-              required
             />
           </div>
-          {/* Submit Button */}
-          <button
-            type="submit"
-            className="w-full bg-[#ff521a] hover:bg-[#e03c1a] text-white py-2 px-4 rounded-md"
-          >
-            Submit
-          </button>
+          <div className="text-center">
+            <button
+              type="submit" onClick={handleSubmit}
+              className="w-full px-4 py-2 bg-[#ff521a] text-white rounded-md hover:bg-[#e04a1a] focus:outline-none focus:ring-2 focus:ring-[#ff521a] focus:ring-opacity-50"
+            >
+              Submit
+            </button>
+          </div>
         </form>
       </div>
     </>

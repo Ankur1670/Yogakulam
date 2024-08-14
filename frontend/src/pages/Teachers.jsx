@@ -75,8 +75,7 @@ OUR YOGA MASTERS          </p>
                 </div>
             </div>
         </section>
-<Login/>
-<Signup/>
+
     </>
   )
 }
